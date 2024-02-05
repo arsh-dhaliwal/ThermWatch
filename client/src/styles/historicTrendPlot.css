@@ -1,0 +1,74 @@
+.historicTrendPlot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a; /* Dark theme background */
+  color: #ffffff; /* Text color for dark theme */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.historicTrendPlot-chart {
+  width: 100%;
+  max-width: 800px; /* Maximum width of the chart */
+  margin-top: 20px;
+}
+
+.historicTrendPlot-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.historicTrendPlot-datePicker {
+  background-color: #333333; /* Darker element background */
+  color: #ffffff; /* Text color for dark theme */
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.historicTrendPlot-button {
+  background-color: #0056b3; /* Blue accent color */
+  color: #ffffff; /* Text color for dark theme */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.historicTrendPlot-button:hover {
+  background-color: #003d82; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .historicTrendPlot-container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .historicTrendPlot-controls {
+    flex-direction: column;
+  }
+
+  .historicTrendPlot-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Placeholder for logo addition */
+.logo-placeholder {
+  width: 150px; /* Logo width */
+  height: 50px; /* Logo height */
+  background-color: #333333; /* Placeholder color */
+  margin-bottom: 20px;
+}
+
+/* Add additional styles as necessary for other elements */

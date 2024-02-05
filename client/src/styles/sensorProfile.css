@@ -1,0 +1,89 @@
+/* Sensor Profile Styles */
+.sensor-profile-container {
+  background-color: #1a1a1a; /* Dark theme background */
+  color: #ffffff; /* Text color */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sensor-profile-header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #007bff; /* Blue accent for headers */
+}
+
+.sensor-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sensor-profile-field {
+  margin-bottom: 10px;
+}
+
+.sensor-profile-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.sensor-profile-input,
+.sensor-profile-select {
+  padding: 10px;
+  border: 1px solid #303030;
+  border-radius: 4px;
+  background-color: #262626; /* Slightly lighter dark background for inputs */
+  color: inherit;
+}
+
+.sensor-profile-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue accent for buttons */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sensor-profile-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.sensor-profile-button:disabled {
+  background-color: #495057; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+/* Add provisions for logo */
+.sensor-profile-logo {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* To add a logo, place the image file in the public folder and use the following CSS */
+/*
+.sensor-profile-logo {
+  background-image: url('/path-to-logo/logo.png'); /* Update with the correct path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+*/
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .sensor-profile-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .sensor-profile-header {
+    font-size: 1.2em;
+  }
+}

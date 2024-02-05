@@ -1,0 +1,75 @@
+/* Company Profile Styles */
+.company-profile-container {
+  background-color: #1a1a1a; /* Dark theme background */
+  color: #ffffff; /* Text color */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.company-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.company-profile-field {
+  background-color: #2a2a2a; /* Slightly lighter background for input fields */
+  border: none;
+  color: inherit; /* Inherits white text color */
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.company-profile-field::placeholder {
+  color: #777; /* Placeholder text color */
+}
+
+.company-profile-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.company-profile-submit {
+  background-color: #0044cc; /* Blue accent color */
+  color: #ffffff; /* Text color */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.company-profile-submit:hover {
+  background-color: #003399; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .company-profile-container {
+    margin: 10px;
+  }
+}
+
+/* Add logo placeholder */
+.company-logo-placeholder {
+  width: 100px; /* Placeholder width for logo */
+  height: 100px; /* Placeholder height for logo */
+  background-color: #333; /* Placeholder background color */
+  border-radius: 50%; /* Circular placeholder */
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #777; /* Placeholder text color */
+}
+
+/* Instructions for adding a logo */
+/* To add a logo, replace the .company-logo-placeholder with your image */
+/* Example:
+.company-logo-placeholder {
+  background: url('path-to-your-logo.png') no-repeat center center;
+  background-size: contain; /* Adjust as needed */
+}
+*/
