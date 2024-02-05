@@ -1,0 +1,77 @@
+.notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.notification-message {
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+.notification-message.success {
+  border-left: 5px solid #28a745; /* Green for success */
+}
+
+.notification-message.warning {
+  border-left: 5px solid #ffc107; /* Yellow for warning */
+}
+
+.notification-message.error {
+  border-left: 5px solid #dc3545; /* Red for error */
+}
+
+.notification-icon {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.notification-text {
+  flex: 1;
+}
+
+.notification-close {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+/* Animation for notification entry */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.notification-message {
+  animation: slideInRight 0.3s ease-out;
+}
+
+/* Animation for notification exit */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.notification-exit-active {
+  animation: fadeOut 0.5s ease-in forwards;
+}

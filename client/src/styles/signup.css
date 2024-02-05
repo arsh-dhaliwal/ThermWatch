@@ -1,0 +1,99 @@
+/* signup.css */
+
+/* General layout */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a2e; /* Dark theme background */
+}
+
+/* Signup form styling */
+.signup-form {
+  padding: 2rem;
+  border-radius: 8px;
+  background: #16213e; /* Slightly lighter dark shade for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form title */
+.signup-form h1 {
+  color: #e1e1e1;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Input fields */
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #3f3f44;
+  background-color: #222234;
+  color: #ffffff;
+}
+
+/* Input focus state */
+.signup-form input:focus {
+  outline: none;
+  border-color: #4e89ae; /* Blue accent for focus */
+}
+
+/* Submit button */
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4e89ae; /* Blue accent for buttons */
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover state for submit button */
+.signup-form button:hover {
+  background-color: #43658b; /* Darker blue on hover */
+}
+
+/* Error message styling */
+.signup-form .error-message {
+  color: #ff4b5c; /* Red color for errors */
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Placeholder color */
+.signup-form input::placeholder {
+  color: #555769;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .signup-form {
+    padding: 1rem;
+  }
+}
+
+/* Provision for adding logo */
+.signup-logo {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  /* Logo placeholder size - replace with actual logo dimensions */
+  width: 150px;
+  height: 50px;
+  background: url('../path-to-logo/logo.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* Instructions for adding logo in README.md:
+   - Place your logo image in the 'client/public/path-to-logo/' directory.
+   - Rename your logo image to 'logo.png'.
+   - The .signup-logo class in 'client/src/styles/signup.css' is already set up to display the logo.
+*/

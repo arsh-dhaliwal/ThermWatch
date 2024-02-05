@@ -1,0 +1,101 @@
+/* Real-time Plot Styles */
+.realTimePlotContainer {
+  background-color: #1a1a1a; /* Dark theme background */
+  color: #ffffff; /* Text color */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.realTimePlotHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.realTimePlotTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.realTimePlotToggle {
+  display: flex;
+  align-items: center;
+}
+
+.realTimePlotToggle label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.realTimePlotToggle input[type="checkbox"] {
+  accent-color: #007bff; /* Blue accent for toggle */
+}
+
+.realTimePlotChart {
+  position: relative;
+  height: 400px; /* Fixed height for the chart */
+}
+
+/* Tooltip styling for the plot */
+.realTimePlotTooltip {
+  position: absolute;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Legend styling for the plot */
+.realTimePlotLegend {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.realTimePlotLegendItem {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.realTimePlotLegendColor {
+  width: 15px;
+  height: 15px;
+  background-color: #007bff; /* Blue accent for legend color */
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.realTimePlotLegendText {
+  font-size: 0.9em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .realTimePlotContainer {
+    margin: 20px;
+  }
+
+  .realTimePlotHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .realTimePlotTitle {
+    margin-bottom: 10px;
+  }
+
+  .realTimePlotChart {
+    height: 300px; /* Smaller height for smaller screens */
+  }
+}
+
+/* Add additional styles as needed for specific chart libraries or customizations */

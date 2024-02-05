@@ -1,0 +1,64 @@
+/* Asset Profile Styles */
+.asset-profile-container {
+  background-color: #1a1a1a; /* Dark theme background */
+  color: #ffffff; /* Text color for readability on dark background */
+  border-radius: 8px; /* Rounded corners for the container */
+  padding: 20px; /* Padding inside the container */
+  margin-bottom: 20px; /* Margin at the bottom of each profile */
+}
+
+.asset-profile-header {
+  font-size: 1.5em; /* Larger text for the header */
+  margin-bottom: 10px; /* Space below the header */
+  color: #007bff; /* Blue accent color for the header */
+}
+
+.asset-profile-form {
+  display: flex; /* Using flexbox for layout */
+  flex-direction: column; /* Stack form elements vertically */
+}
+
+.asset-profile-field {
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+.asset-profile-label {
+  font-weight: bold; /* Bold font for labels */
+  margin-bottom: 5px; /* Space below the label */
+}
+
+.asset-profile-input,
+.asset-profile-select {
+  padding: 10px; /* Padding inside the input/select elements */
+  border: 1px solid #303030; /* Border color for inputs */
+  border-radius: 4px; /* Rounded corners for inputs */
+  background-color: #262626; /* Slightly lighter background for inputs */
+  color: inherit; /* Text color inherited from parent */
+}
+
+.asset-profile-input:focus,
+.asset-profile-select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Blue accent color for focus */
+}
+
+.asset-profile-button {
+  padding: 10px 20px; /* Padding inside the button */
+  background-color: #007bff; /* Blue accent color for buttons */
+  color: #ffffff; /* Text color for buttons */
+  border: none; /* No border for buttons */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for button hover effect */
+}
+
+.asset-profile-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.asset-profile-button:disabled {
+  background-color: #495057; /* Disabled button has a grey background */
+  cursor: not-allowed; /* Not-allowed cursor for disabled button */
+}
+
+/* Add additional styles as needed for alignment, responsiveness, and interactivity */

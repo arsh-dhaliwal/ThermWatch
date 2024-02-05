@@ -1,0 +1,95 @@
+/* settings.css - Styles for the Settings page of ThermWatch */
+
+.settings-container {
+  background-color: #1a1a1a; /* Dark theme background */
+  color: #ffffff; /* Text color for readability on dark background */
+  min-height: 100vh; /* Full height */
+  padding: 20px; /* Padding around the settings content */
+}
+
+.settings-header {
+  font-size: 24px; /* Header font size */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.settings-form {
+  background-color: #2a2a2a; /* Slightly lighter background for form */
+  border-radius: 8px; /* Rounded corners for form */
+  padding: 20px; /* Padding inside the form */
+  max-width: 600px; /* Max width of form */
+  margin: 0 auto; /* Center form */
+}
+
+.settings-form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+.settings-form-label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space below label */
+}
+
+.settings-form-input,
+.settings-form-select {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside inputs and selects */
+  border-radius: 4px; /* Rounded corners for inputs and selects */
+  border: 1px solid #3a3a3a; /* Border color */
+  background-color: #1a1a1a; /* Background color */
+  color: #ffffff; /* Text color */
+}
+
+.settings-form-input:focus,
+.settings-form-select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Blue border for focus */
+}
+
+.settings-form-button {
+  padding: 10px 20px; /* Padding inside button */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners for button */
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.settings-form-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.settings-form-button:disabled {
+  background-color: #5a5a5a; /* Gray out button when disabled */
+  cursor: not-allowed; /* Not-allowed cursor when disabled */
+}
+
+/* Status color indicators for alarm engine */
+.status-indicator {
+  display: inline-block; /* Inline display */
+  width: 10px; /* Width of the indicator */
+  height: 10px; /* Height of the indicator */
+  border-radius: 50%; /* Circle shape */
+  margin-right: 5px; /* Space to the right */
+}
+
+.status-indicator.good {
+  background-color: #28a745; /* Green for good status */
+}
+
+.status-indicator.attention {
+  background-color: #ffc107; /* Yellow for attention status */
+}
+
+.status-indicator.intervention {
+  background-color: #dc3545; /* Red for intervention status */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .settings-form {
+    padding: 10px; /* Smaller padding on smaller screens */
+  }
+}
+
+/* Add additional styles as necessary for other elements */

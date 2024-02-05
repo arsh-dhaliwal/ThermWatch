@@ -1,0 +1,153 @@
+/* Dashboard Styles */
+.dashboard-container {
+  background-color: #1a1a1a; /* Dark theme background */
+  color: #ffffff; /* Text color */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Widget styles */
+.widget {
+  background: #333333; /* Dark widget background */
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.widget.green {
+  border-left: 5px solid #4CAF50; /* Green status indicator */
+}
+
+.widget.yellow {
+  border-left: 5px solid #FFEB3B; /* Yellow status indicator */
+}
+
+.widget.red {
+  border-left: 5px solid #F44336; /* Red status indicator */
+}
+
+/* Widget header */
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.widget-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Real-time plot styles */
+.real-time-plot {
+  background: #222222; /* Slightly lighter background for plot area */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Polar trend plot styles */
+.polar-trend-plot {
+  margin-top: 20px;
+}
+
+/* Historic trend plot styles */
+.historic-trend-plot {
+  margin-top: 20px;
+}
+
+/* Toggle switch for units */
+.toggle-unit-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-unit-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3; /* Blue accent for toggle */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Notification styles */
+.notification-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.notification {
+  background: #333333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .widget-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .widget-title {
+    margin-bottom: 10px;
+  }
+}
+
+/* Add logo placeholder */
+.logo-placeholder {
+  width: 200px;
+  height: 50px;
+  background: #222; /* Placeholder color */
+  margin-bottom: 20px;
+}
+
+/* Instructions to add logo */
+/* To add the logo for ThermWatch, replace the background of the .logo-placeholder
+   with the image by adding the following CSS rule:
+   .logo-placeholder {
+     background: url('path-to-your-logo.png') no-repeat center center;
+     background-size: contain;
+   }
+*/

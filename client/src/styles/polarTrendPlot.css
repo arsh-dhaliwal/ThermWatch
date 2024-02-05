@@ -1,0 +1,97 @@
+.polarTrendPlot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #1a1a1a; /* Dark theme background */
+  border-radius: 8px;
+  color: #ffffff; /* Text color for dark theme */
+}
+
+.polarTrendPlot-chart {
+  width: 100%;
+  max-width: 600px; /* Maximum width of the polar plot */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.polarTrendPlot-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.polarTrendPlot-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0056b3; /* Blue accent color */
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.polarTrendPlot-button:hover {
+  background-color: #003d82; /* Darker blue on hover */
+}
+
+.polarTrendPlot-button:disabled {
+  background-color: #cccccc; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+.polarTrendPlot-button.active {
+  background-color: #004c99; /* Active button color */
+}
+
+.polarTrendPlot-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.polarTrendPlot-table th,
+.polarTrendPlot-table td {
+  padding: 10px;
+  border: 1px solid #333333; /* Border color for table */
+  text-align: left;
+}
+
+.polarTrendPlot-table th {
+  background-color: #0056b3; /* Blue accent color for headers */
+}
+
+.polarTrendPlot-table tr:nth-child(even) {
+  background-color: #262626; /* Dark theme striped rows */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .polarTrendPlot-controls {
+    flex-direction: column;
+  }
+
+  .polarTrendPlot-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .polarTrendPlot-table {
+    width: 100%;
+  }
+}
+
+/* Placeholder for logo styling */
+.logo-placeholder {
+  width: 150px; /* Logo width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+}
+
+/* Add additional styles as needed for specific components or states */
