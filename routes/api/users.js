@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const validateRegisterInput = require('../../validation/register');
 const validateLoginInput = require('../../validation/login');
-const auth = require('../config/auth'); // Corrected path
+const auth = require('../../config/auth'); // Corrected path
 
 // User Model
 const User = require('../../models/User');
