@@ -1,7 +1,7 @@
-name: Sweep Issue
+name: Sweep Task
 title: 'Sweep: '
 description: For small bugs, features, refactors, and tests to be handled by Sweep, an AI-powered junior developer.
-labels: sweep
+labels: sweep,task
 body:
   - type: textarea
     id: description
